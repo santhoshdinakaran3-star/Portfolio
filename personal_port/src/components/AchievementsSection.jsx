@@ -38,8 +38,8 @@ const AchievementsGrid = () => {
     },
     {
       icon: Award,
-      title: 'Top Performer',
-      description: 'Contest top 10%',
+      title: 'Performer',
+      description: 'Contest top 70%',
       color: 'text-blue-400',
       borderColor: 'border-blue-400/30',
       shadowColor: 'shadow-blue-400/10',
