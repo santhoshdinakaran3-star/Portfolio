@@ -62,7 +62,7 @@ const AboutSection = () => {
                     transition={{ delay: 0.8 }}
                   >
                     <span className="w-2 h-2 bg-secondary rounded-full mr-3 glow-secondary"></span>
-                    120+ LeetCode problems solved
+                    300+ LeetCode problems solved
                   </motion.li>
                   <motion.li
                     className="flex items-center"
@@ -71,7 +71,7 @@ const AboutSection = () => {
                     transition={{ delay: 1 }}
                   >
                     <span className="w-2 h-2 bg-accent rounded-full mr-3 glow-accent"></span>
-                    02 projects completed
+                    05 projects completed
                   </motion.li>
                   <motion.li
                     className="flex items-center"
