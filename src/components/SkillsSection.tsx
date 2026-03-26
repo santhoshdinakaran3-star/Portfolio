@@ -11,19 +11,19 @@ const SkillsSection = () => {
   const [hoveredTech, setHoveredTech] = useState<string | null>(null);
 
   const technologies = [
-    { name: 'Android', icon: '🤖', color: 'text-success' },
-    { name: 'Python', icon: '🐍', color: 'text-primary' },
-    { name: 'C++', icon: '⚡', color: 'text-accent' },
-    { name: 'Java', icon: '☕', color: 'text-secondary' },
-    { name: 'C', icon: '🔧', color: 'text-primary-glow' },
-    { name: 'C#', icon: '💎', color: 'text-accent-glow' },
-    { name: 'TypeScript', icon: '🔷', color: 'text-primary' },
-    { name: 'Flutter', icon: '🦋', color: 'text-secondary' },
-    { name: 'MongoDB', icon: '🍃', color: 'text-success' },
-    { name: 'React', icon: '⚛️', color: 'text-accent' },
-    { name: 'Node.js', icon: '🟢', color: 'text-success' },
-    { name: 'Docker', icon: '🐳', color: 'text-primary' },
-    { name: 'LeetCode', icon: '💻', color: 'text-orange-400', link: 'https://leetcode.com/u/santhosh_Dinakaran/' },
+    { name: 'Android', icon: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original.svg', color: 'text-success' },
+    { name: 'Python', icon: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg', color: 'text-primary' },
+    { name: 'C++', icon: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg', color: 'text-accent' },
+    { name: 'Java', icon: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg', color: 'text-secondary' },
+    { name: 'C', icon: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg', color: 'text-primary-glow' },
+    { name: 'C#', icon: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg', color: 'text-accent-glow' },
+    { name: 'TypeScript', icon: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg', color: 'text-primary' },
+    { name: 'Flutter', icon: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/flutter/flutter-original.svg', color: 'text-secondary' },
+    { name: 'MongoDB', icon: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg', color: 'text-success' },
+    { name: 'React', icon: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg', color: 'text-accent' },
+    { name: 'Node.js', icon: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg', color: 'text-success' },
+    { name: 'Docker', icon: 'https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg', color: 'text-primary' },
+    { name: 'LeetCode', icon: 'https://cdn.simpleicons.org/leetcode/FFA116', color: 'text-orange-400', link: 'https://leetcode.com/u/santhosh_Dinakaran/' },
   ];
 
   // Create multiple orbital rings with responsive sizing
@@ -268,7 +268,7 @@ const SkillsSection = () => {
                           data-cursor-hover
                         >
                            <motion.div 
-                             className="text-lg sm:text-xl lg:text-2xl xl:text-3xl"
+                             className="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 flex items-center justify-center bg-white/10 rounded-full p-2 backdrop-blur-sm border border-white/20"
                              animate={{
                                rotateY: hoveredTech === tech.name ? [0, 360] : 0,
                              }}
@@ -276,7 +276,11 @@ const SkillsSection = () => {
                                rotateY: { duration: 0.8, ease: 'easeInOut' }
                              }}
                            >
-                             {tech.icon}
+                             <img 
+                               src={tech.icon} 
+                               alt={tech.name} 
+                               className="w-full h-full object-contain filter drop-shadow-md"
+                             />
                            </motion.div>
                         </motion.a>
                       ) : (
@@ -311,7 +315,7 @@ const SkillsSection = () => {
                           data-cursor-hover
                         >
                            <motion.div 
-                             className="text-lg sm:text-xl lg:text-2xl xl:text-3xl"
+                             className="w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 flex items-center justify-center bg-white/10 rounded-full p-2 backdrop-blur-sm border border-white/20"
                              animate={{
                                rotateY: hoveredTech === tech.name ? [0, 360] : 0,
                              }}
@@ -319,7 +323,11 @@ const SkillsSection = () => {
                                rotateY: { duration: 0.8, ease: 'easeInOut' }
                              }}
                            >
-                             {tech.icon}
+                             <img 
+                               src={tech.icon} 
+                               alt={tech.name} 
+                               className="w-full h-full object-contain filter drop-shadow-md"
+                             />
                            </motion.div>
                         </motion.div>
                       )}

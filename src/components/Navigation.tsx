@@ -67,7 +67,7 @@ const Navigation = () => {
               
               {/* GitHub Link */}
               <motion.a
-                href="https://github.com/Santhosh148"
+                href="https://github.com/santhoshdinakaran3-star"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-full bg-background/10 border border-border/20 hover:border-primary transition-all glow-primary"
@@ -142,7 +142,7 @@ const Navigation = () => {
                 
                 {/* Mobile GitHub Link */}
                 <motion.a
-                  href="https://github.com/Santhosh148"
+                  href="https://github.com/santhoshdinakaran3-star"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-3 p-4 bg-gradient-primary rounded-full text-primary-foreground font-medium glow-primary mt-8"

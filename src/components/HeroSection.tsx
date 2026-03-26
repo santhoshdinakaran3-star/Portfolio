@@ -11,7 +11,7 @@ const HeroSection = () => {
 
   const socialLinks = [
     { icon: Mail, href: 'mailto:santhoshdinakaran3@gmail.com', label: 'Email' },
-    { icon: Github, href: 'https://github.com/Santhosh148', label: 'GitHub' },
+    { icon: Github, href: 'https://github.com/santhoshdinakaran3-star', label: 'GitHub' },
     { icon: LeetCodeIcon, href: 'https://leetcode.com/u/santhosh_Dinakaran/', label: 'LeetCode' },
     { icon: Linkedin, href: 'https://www.linkedin.com/in/santhosh-dinakaran-57631a295', label: 'LinkedIn' },
   ];

@@ -26,27 +26,103 @@ const ProjectsSection = () => {
   const projects: Project[] = [
     {
       id: 1,
+      title: 'Portfolio',
+      description: 'Personal portfolio website showcasing development skills and projects.',
+      longDescription: 'A high-performance personal portfolio website built with modern web technologies. It features smooth scroll-linked animations, a custom high-performance background, and a responsive design optimized for all devices. It demonstrates expertise in React, Framer Motion, and UI/UX design.',
+      technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Framer Motion', 'Vite'],
+      image: '/images/projects/portfolio.png',
+      githubUrl: 'https://github.com/santhoshdinakaran3-star/Portfolio',
+      liveUrl: 'http://localhost:8080',
+      category: 'Web Development',
+    },
+    {
+      id: 2,
+      title: 'CIFAR_10',
+      description: 'Image classification project using deep learning and CNNs.',
+      longDescription: 'An end-to-end computer vision project implementing a Convolutional Neural Network (CNN) to classify images from the CIFAR-10 dataset. Features include data augmentation, model training with PyTorch/TensorFlow, and performance analysis through confusion matrices and accuracy graphs.',
+      technologies: ['Python', 'PyTorch', 'CNN', 'Matplotlib', 'NumPy'],
+      image: '/images/projects/cifar10.png',
+      githubUrl: 'https://github.com/santhoshdinakaran3-star/CIFAR_10',
+      liveUrl: '#',
+      category: 'Deep Learning',
+    },
+    {
+      id: 3,
+      title: 'Habit Tracker',
+      description: 'Daily habit tracking web application to improve productivity.',
+      longDescription: 'A comprehensive habit tracking application designed to help users build and maintain healthy routines. Includes features for setting daily goals, tracking progress with interactive charts, and receiving notification reminders. Built with a full-stack architecture for persistent data storage.',
+      technologies: ['React', 'Node.js', 'Express', 'MongoDB', 'Tailwind CSS'],
+      image: '/images/projects/habit-tracker.png',
+      githubUrl: 'https://github.com/santhoshdinakaran3-star/habit-tracker',
+      liveUrl: '#',
+      category: 'Full Stack',
+    },
+    {
+      id: 4,
+      title: 'Chat Perso',
+      description: 'Real-time personal chat application for instant messaging.',
+      longDescription: 'A real-time messaging platform enabling instant communication between users. Utilizing WebSocket technology through Socket.io, the application supports private chat rooms, message history, and user status indicators, providing a seamless and responsive chat experience.',
+      technologies: ['Socket.io', 'React', 'Node.js', 'Express', 'Tailwind CSS'],
+      image: '/images/projects/chat-perso.png',
+      githubUrl: 'https://github.com/santhoshdinakaran3-star/chat-perso',
+      liveUrl: '#',
+      category: 'Real-time Apps',
+    },
+    {
+      id: 5,
+      title: 'Code Vis',
+      description: 'Interactive code visualization tool for developers.',
+      longDescription: 'A powerful tool designed to visualize code execution and structure. It helps developers understand complex algorithms and data structures through interactive diagrams and real-time visualization of variable states and execution flow. Features a built-in code editor and multiple visualization modes.',
+      technologies: ['React', 'D3.js', 'Monaco Editor', 'Canvas API', 'TypeScript'],
+      image: '/images/projects/code-vis.png',
+      githubUrl: 'https://github.com/santhoshdinakaran3-star/Code-vis',
+      liveUrl: '#',
+      category: 'Developer Tools',
+    },
+    {
+      id: 6,
       title: 'Inter-Department Library Management System',
       description: 'Full Stack Web Application',
       longDescription: 'Dynamic library management website with login/signup, animated book search, and MySQL backend integration. Features include user authentication, book catalog management, search functionality with animations, and comprehensive database operations for managing library resources across multiple departments.',
       technologies: ['HTML', 'CSS', 'JavaScript', 'MySQL', 'PHP'],
-      image: 'https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=400&h=300&fit=crop',
+      image: '/images/projects/library-management.png',
       githubUrl: '#',
       liveUrl: '#',
       category: 'Full Stack',
     },
     {
-      id: 2,
+      id: 7,
       title: 'Predictive Modeling – Firearm Sales in U.S.',
       description: 'Data Science & Machine Learning Project',
       longDescription: 'Predictive analytics model to forecast U.S. firearm sales using state-wise handgun & long gun adjustments, time-based features, and regression algorithms. Includes performance evaluation with R², RMSE, MAE, and feature importance analysis. The model analyzes historical sales data to identify trends and make accurate predictions for future firearm sales patterns.',
       technologies: ['Python', 'Pandas', 'Scikit-learn', 'NumPy', 'Matplotlib'],
-      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop',
+      image: '/images/projects/firearm-sales.png',
       githubUrl: '#',
       liveUrl: '#',
       category: 'Data Science',
     },
-  ];
+  ];  const techIcons: { [key: string]: string } = {
+    'React': 'https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg',
+    'TypeScript': 'https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg',
+    'Tailwind CSS': 'https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-original.svg',
+    'Framer Motion': 'https://cdn.worldvectorlogo.com/logos/framer-motion.svg',
+    'Vite': 'https://raw.githubusercontent.com/devicons/devicon/master/icons/vitejs/vitejs-original.svg',
+    'Python': 'https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg',
+    'PyTorch': 'https://raw.githubusercontent.com/devicons/devicon/master/icons/pytorch/pytorch-original.svg',
+    'Node.js': 'https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg',
+    'Express': 'https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original.svg',
+    'MongoDB': 'https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original.svg',
+    'Socket.io': 'https://raw.githubusercontent.com/devicons/devicon/master/icons/socketio/socketio-original.svg',
+    'MySQL': 'https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original.svg',
+    'PHP': 'https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg',
+    'HTML': 'https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg',
+    'CSS': 'https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg',
+    'JavaScript': 'https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg',
+    'Pandas': 'https://raw.githubusercontent.com/devicons/devicon/master/icons/pandas/pandas-original.svg',
+    'NumPy': 'https://raw.githubusercontent.com/devicons/devicon/master/icons/numpy/numpy-original.svg',
+    'Matplotlib': 'https://cdn.worldvectorlogo.com/logos/matplotlib-1.svg',
+    'Scikit-learn': 'https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg',
+  };
 
   const ProjectModal = ({ project, onClose }: { project: Project; onClose: () => void }) => (
     <motion.div
@@ -108,14 +184,17 @@ const ProjectsSection = () => {
             </p>
             <div>
               <h4 className="text-lg font-semibold text-foreground mb-3">Technologies Used</h4>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-3">
                 {project.technologies.map((tech) => (
-                  <span
+                  <div
                     key={tech}
-                    className="px-3 py-1 bg-primary/20 text-primary rounded-full text-sm"
+                    className="flex items-center gap-2 px-3 py-1.5 bg-primary/10 border border-primary/20 text-primary rounded-lg text-sm hover:bg-primary/20 transition-colors"
                   >
+                    {techIcons[tech] && (
+                      <img src={techIcons[tech]} alt={tech} className="w-4 h-4" />
+                    )}
                     {tech}
-                  </span>
+                  </div>
                 ))}
               </div>
             </div>
@@ -178,20 +257,23 @@ const ProjectsSection = () => {
                     <h3 className="text-xl font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
                       {project.title}
                     </h3>
-                    <p className="text-muted-foreground text-sm mb-4">
+                    <p className="text-muted-foreground text-sm mb-4 line-clamp-2">
                       {project.description}
                     </p>
-                    <div className="flex flex-wrap gap-1">
+                    <div className="flex flex-wrap gap-2">
                       {project.technologies.slice(0, 3).map((tech) => (
-                        <span
+                        <div
                           key={tech}
-                          className="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full"
+                          className="flex items-center gap-1.5 px-2 py-1 bg-primary/10 border border-primary/20 text-primary text-[10px] sm:text-xs rounded-md"
                         >
+                          {techIcons[tech] && (
+                            <img src={techIcons[tech]} alt={tech} className="w-3 h-3" />
+                          )}
                           {tech}
-                        </span>
+                        </div>
                       ))}
                       {project.technologies.length > 3 && (
-                        <span className="px-2 py-1 bg-muted text-muted-foreground text-xs rounded-full">
+                        <span className="px-2 py-1 bg-muted/20 text-muted-foreground text-[10px] sm:text-xs rounded-md">
                           +{project.technologies.length - 3} more
                         </span>
                       )}
@@ -216,4 +298,4 @@ const ProjectsSection = () => {
   );
 };
 
-export default ProjectsSection;
+export default ProjectsSection;

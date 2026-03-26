@@ -28,7 +28,7 @@ const AchievementsGrid = () => {
   const achievements = [
     {
       icon: Trophy,
-      title: 'LeetCode Knight',
+      title: 'LeetCode',
       description: '120+ problems solved',
       color: 'text-yellow-400',
       borderColor: 'border-yellow-400/30',
