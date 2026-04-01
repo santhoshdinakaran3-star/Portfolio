@@ -101,7 +101,19 @@ const ProjectsSection = () => {
       liveUrl: '#',
       category: 'Data Science',
     },
-  ];  const techIcons: { [key: string]: string } = {
+    {
+      id: 8,
+      title: 'Zentix - AI Resume Analyzer',
+      description: 'AI-driven ATS resume analyzer providing instant compatibility scores and optimizations.',
+      longDescription: 'Zentix allows you to upload your resume and a target job description, and instantly receive an AI-driven compatibility score. Built specifically to tackle tricky Applicant Tracking Systems (ATS), it features optimized REST APIs for reduced latency and a fully responsive interface. Demonstrates integration of AI models with a modern React frontend and FastAPI backend.',
+      technologies: ['React', 'FastAPI', 'AI', 'Tailwind CSS'],
+      image: '/images/projects/zentix.png',
+      githubUrl: 'https://github.com/santhoshdinakaran3-star/AtsResume',
+      liveUrl: 'https://atsfriendresume.netlify.app/',
+      category: 'AI Application',
+    },
+  ];
+  const techIcons: { [key: string]: string } = {
     'React': 'https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg',
     'TypeScript': 'https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg',
     'Tailwind CSS': 'https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-original.svg',
@@ -122,6 +134,7 @@ const ProjectsSection = () => {
     'NumPy': 'https://raw.githubusercontent.com/devicons/devicon/master/icons/numpy/numpy-original.svg',
     'Matplotlib': 'https://cdn.worldvectorlogo.com/logos/matplotlib-1.svg',
     'Scikit-learn': 'https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg',
+    'FastAPI': 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg',
   };
 
   const ProjectModal = ({ project, onClose }: { project: Project; onClose: () => void }) => (
@@ -298,4 +311,4 @@ const ProjectsSection = () => {
   );
 };
 
-export default ProjectsSection;
+export default ProjectsSection;
